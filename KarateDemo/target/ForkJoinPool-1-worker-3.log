@@ -1,0 +1,231 @@
+12:00:18.762 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:00:19.090 request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+12:00:20.010 response time in milliseconds: 914.04
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2612
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 5c8b80e09b2a0052-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Aug 2020 06:30:18 GMT
+1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d3ff75fcf508462989d035a7a3da730d81598423418; expires=Fri, 25-Sep-20 06:30:18 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 04cb0ee060000000523517f200000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+12:00:20.075 [print] Total users Count :  12
+12:00:20.081 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:00:20.088 request:
+1 > PUT https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"name":"Archana","job":"Mahajan"}
+
+12:00:20.746 response time in milliseconds: 658.28
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5c8b80e53925063d-LHR
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Aug 2020 06:30:19 GMT
+1 < Etag: W/"49-loT+p7/2vdno69obEqZKU8qQUDk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d83bb2c67e5a0ed141ae59a711ce6c3951598423419; expires=Fri, 25-Sep-20 06:30:19 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 04cb0ee33e0000063d8e267200000001
+{"name":"Archana","job":"Mahajan","updatedAt":"2020-08-26T06:30:19.739Z"}
+
+12:00:20.748 [print] Response :  {
+  "name": "Archana",
+  "job": "Mahajan",
+  "updatedAt": "2020-08-26T06:30:19.739Z"
+}
+
+12:00:20.754 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:00:20.757 request:
+1 > POST https://reqres.in/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+{"name":"Archana","job":"Mahajan"}
+
+12:00:21.397 response time in milliseconds: 639.39
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5c8b80e94f9bdc33-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 84
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Aug 2020 06:30:20 GMT
+1 < Etag: W/"54-cXEKEbA0Um8v51P3lYjqze4Lym0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=deec40836ef8008f2244cfc829d43d9e61598423420; expires=Fri, 25-Sep-20 06:30:20 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 04cb0ee5ce0000dc33d8060200000001
+{"name":"Archana","job":"Mahajan","id":"793","createdAt":"2020-08-26T06:30:20.382Z"}
+
+12:00:21.398 [print] Response :  {
+  "createdAt": "2020-08-26T06:30:20.382Z",
+  "name": "Archana",
+  "id": "793",
+  "job": "Mahajan"
+}
+
+12:00:21.412 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:00:21.414 request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+12:00:22.069 response time in milliseconds: 654.40
+1 < 204
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5c8b80ed7ec1dbd7-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Wed, 26 Aug 2020 06:30:21 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dd7a178b1511641da6b09b03c312ea5a11598423421; expires=Fri, 25-Sep-20 06:30:21 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 04cb0ee86b0000dbd77eaeb200000001
+
+12:00:22.082 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:00:22.084 request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+12:00:22.730 response time in milliseconds: 641.60
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2615
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 5c8b80f1c9d70722-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 26 Aug 2020 06:30:21 GMT
+1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dcb636adabc3f84e5fbd1909003e84d101598423421; expires=Fri, 25-Sep-20 06:30:21 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 04cb0eeb1b000007229fb37200000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+12:00:22.771 [print] Details Of Michael :  {
+  "last_name": "Lawson",
+  "id": 7,
+  "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
+  "first_name": "Michael",
+  "email": "michael.lawson@reqres.in"
+}
+
+ar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+16:47:40.818 [print] Details Of Michael :  {
+  "last_name": "Lawson",
+  "id": 7,
+  "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
+  "first_name": "Michael",
+  "email": "michael.lawson@reqres.in"
+}
+
+16:47:40.845 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:47:41.216 request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.2)
+
+16:47:41.936 response time in milliseconds: 717.16
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 5187
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 5c84e848aca7e614-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 25 Aug 2020 11:17:34 GMT
+1 < Etag: W/"173-1Z8bn0V7UjH6FK7NCaza1ccWXQk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6eb776d1cb9a7b984d5d2ecf4d85d9641598354254; expires=Thu, 24-Sep-20 11:17:34 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 04c6ef81660000e614a430a200000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+16:47:41.940 [print] 
+Expected Output :  {
+  "data": {
+    "id": 2,
+    "email": "janet.weaver@reqres.in",
+    "first_name": "Janet",
+    "last_name": "Weaver",
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+  },
+  "ad": {
+    "company": "StatusCode Weekly",
+    "url": "http://statuscode.org/",
+    "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
+  }
+}
+
+16:47:41.967 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:47:41.970 [print] 
+First Name :  Archana
+16:47:41.972 [print] 
+Last Name  :  Mahajan
+16:47:41.977 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:47:41.979 [print] 
+Name :  Archana
+mahajan
+16:47:41.984 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:47:41.987 [print] 
+Name :  Archana Mahajan
+

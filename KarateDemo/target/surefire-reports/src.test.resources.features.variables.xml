@@ -1,0 +1,26 @@
+<testsuite failures="0" name="src/test/resources/features/variables.feature" skipped="0" tests="3" time="0.008277">
+  <testcase classname="src.test.resources.features.variables" name="Use def variable" time="0.004309">
+    <system-out>Given def firstVar = 'Archana' ............................................ passed
+Then print '\nFirst Name : ', firstVar .................................... passed
+* def secondVar = 'Mahajan' ............................................... passed
+Then print '\nLast Name  : ', secondVar ................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.variables" name="Use text variable" time="0.001648">
+    <system-out>Given def firstVar = 'Archana' ............................................ passed
+Then print '\nFirst Name : ', firstVar .................................... passed
+* def secondVar = 'Mahajan' ............................................... passed
+Then print '\nLast Name  : ', secondVar ................................... passed
+Given text name = ......................................................... passed
+Then print "\nName : ", name .............................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.variables" name="Use string variable" time="0.00232">
+    <system-out>Given def firstVar = 'Archana' ............................................ passed
+Then print '\nFirst Name : ', firstVar .................................... passed
+* def secondVar = 'Mahajan' ............................................... passed
+Then print '\nLast Name  : ', secondVar ................................... passed
+Given text name = ......................................................... passed
+Then print "\nName : ", name .............................................. passed
+Given string name = 'Archana Mahajan' ..................................... passed
+Then print "\nName : ", name .............................................. passed</system-out>
+  </testcase>
+</testsuite>

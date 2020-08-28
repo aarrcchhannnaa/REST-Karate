@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/resources/features/practice.feature" skipped="0" tests="1" time="2.309287">
+  <testcase classname="src.test.resources.features.practice" name="01 get call test" time="2.309287">
+    <system-out>* def expectedResult = read('result.json') ................................ passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print '\nExpected Output : ', expectedResult ......................... passed
+And match response == expectedResult ...................................... passed</system-out>
+  </testcase>
+</testsuite>

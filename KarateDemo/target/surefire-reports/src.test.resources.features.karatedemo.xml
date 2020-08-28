@@ -1,0 +1,72 @@
+<testsuite failures="0" name="src/test/resources/features/karatedemo.feature" skipped="0" tests="5" time="3.95624">
+  <testcase classname="src.test.resources.features.karatedemo" name="Get list of all user and verify total user available is userCount[12]" time="1.300423">
+    <system-out>Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method get ........................................................... passed
+Then match response.total == 12 ........................................... passed
+And print 'Total users Count : ', response.total .......................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.karatedemo" name="Update details of any user on the basis of his/her id" time="0.666931">
+    <system-out>Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method get ........................................................... passed
+Then match response.total == 12 ........................................... passed
+And print 'Total users Count : ', response.total .......................... passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+When request {"name": "Archana","job": "Mahajan"} ......................... passed
+And method put ............................................................ passed
+Then print 'Response : ', response ........................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.karatedemo" name="Create new user and verify the details of created user" time="0.644309">
+    <system-out>Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method get ........................................................... passed
+Then match response.total == 12 ........................................... passed
+And print 'Total users Count : ', response.total .......................... passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+When request {"name": "Archana","job": "Mahajan"} ......................... passed
+And method put ............................................................ passed
+Then print 'Response : ', response ........................................ passed
+Given url 'https://reqres.in/api/users' ................................... passed
+When request {"name": "Archana","job": "Mahajan"} ......................... passed
+And method post ........................................................... passed
+And print 'Response : ', response ......................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.karatedemo" name="Delete the user and verify that status code is correct and user has been deleted" time="0.656629">
+    <system-out>Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method get ........................................................... passed
+Then match response.total == 12 ........................................... passed
+And print 'Total users Count : ', response.total .......................... passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+When request {"name": "Archana","job": "Mahajan"} ......................... passed
+And method put ............................................................ passed
+Then print 'Response : ', response ........................................ passed
+Given url 'https://reqres.in/api/users' ................................... passed
+When request {"name": "Archana","job": "Mahajan"} ......................... passed
+And method post ........................................................... passed
+And print 'Response : ', response ......................................... passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.karatedemo" name="Get details of users whose first_name=Michael" time="0.687949">
+    <system-out>Given url 'https://reqres.in/api/users?page=2' ............................ passed
+When method get ........................................................... passed
+Then match response.total == 12 ........................................... passed
+And print 'Total users Count : ', response.total .......................... passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+When request {"name": "Archana","job": "Mahajan"} ......................... passed
+And method put ............................................................ passed
+Then print 'Response : ', response ........................................ passed
+Given url 'https://reqres.in/api/users' ................................... passed
+When request {"name": "Archana","job": "Mahajan"} ......................... passed
+And method post ........................................................... passed
+And print 'Response : ', response ......................................... passed
+Given url 'https://reqres.in/api/users/2' ................................. passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed
+Given url 'https://reqres.in/api/users?page=2' ............................ passed
+And method get ............................................................ passed
+* def data = response.data ................................................ passed
+* def myfunc = ............................................................ passed
+* def returnedData = call myfunc data ..................................... passed
+And print 'Details Of Michael : ', returnedData ........................... passed</system-out>
+  </testcase>
+</testsuite>

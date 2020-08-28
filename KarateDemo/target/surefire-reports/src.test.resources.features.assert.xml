@@ -1,0 +1,50 @@
+<testsuite failures="0" name="src/test/resources/features/assert.feature" skipped="0" tests="5" time="0.006349">
+  <testcase classname="src.test.resources.features.assert" name="Use match==" time="0.000363">
+    <system-out>Given def name = 'Archana' ................................................ passed
+Then match name == 'Archana' .............................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.assert" name="Use match!=" time="0.000301">
+    <system-out>Given def name = 'Archana' ................................................ passed
+Then match name == 'Archana' .............................................. passed
+Given def name = 'Archana' ................................................ passed
+Then match name != 'Mahajan' .............................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.assert" name="Use match contains" time="0.000553">
+    <system-out>Given def name = 'Archana' ................................................ passed
+Then match name == 'Archana' .............................................. passed
+Given def name = 'Archana' ................................................ passed
+Then match name != 'Mahajan' .............................................. passed
+Given def name = { 'fname' : 'Archana','lname' : 'Mahajan' } .............. passed
+Then match name contains { 'fname' : 'Archana' } .......................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.assert" name="Use match contains only" time="0.004389">
+    <system-out>Given def name = 'Archana' ................................................ passed
+Then match name == 'Archana' .............................................. passed
+Given def name = 'Archana' ................................................ passed
+Then match name != 'Mahajan' .............................................. passed
+Given def name = { 'fname' : 'Archana','lname' : 'Mahajan' } .............. passed
+Then match name contains { 'fname' : 'Archana' } .......................... passed
+* def data = { num: [1, 2, 3] } ........................................... passed
+* match data.num contains 1 ............................................... passed
+* match data.num contains [2] ............................................. passed
+* match data.num contains [3, 2] .......................................... passed
+* match data.num contains only [3, 2, 1] .................................. passed
+* match data.num contains only [2, 3, 1] .................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.assert" name="Use match contains any" time="0.000742">
+    <system-out>Given def name = 'Archana' ................................................ passed
+Then match name == 'Archana' .............................................. passed
+Given def name = 'Archana' ................................................ passed
+Then match name != 'Mahajan' .............................................. passed
+Given def name = { 'fname' : 'Archana','lname' : 'Mahajan' } .............. passed
+Then match name contains { 'fname' : 'Archana' } .......................... passed
+* def data = { num: [1, 2, 3] } ........................................... passed
+* match data.num contains 1 ............................................... passed
+* match data.num contains [2] ............................................. passed
+* match data.num contains [3, 2] .......................................... passed
+* match data.num contains only [3, 2, 1] .................................. passed
+* match data.num contains only [2, 3, 1] .................................. passed
+* def data = { num: [1, 2, 3] } ........................................... passed
+* match data.num contains any[10,2,5] ..................................... passed</system-out>
+  </testcase>
+</testsuite>

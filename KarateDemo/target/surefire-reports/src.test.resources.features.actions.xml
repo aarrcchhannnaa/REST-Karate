@@ -1,0 +1,48 @@
+<testsuite failures="0" name="src/test/resources/features/actions.feature" skipped="0" tests="4" time="0.073676">
+  <testcase classname="src.test.resources.features.actions" name="Use Assert" time="0.012164">
+    <system-out>Given def name = 'Bob' .................................................... passed
+And def val = 5 ........................................................... passed
+Then assert name + val == 'Bob5' .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.actions" name="Use Replace" time="0.003816">
+    <system-out>Given def name = 'Bob' .................................................... passed
+And def val = 5 ........................................................... passed
+Then assert name + val == 'Bob5' .......................................... passed
+Given def text = 'My name is &lt;name1&gt;' ..................................... passed
+And print text ............................................................ passed
+Then replace text.name1 = 'Archana' ....................................... passed
+And print text ............................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.actions" name="Use Set" time="0.053146">
+    <system-out>Given def name = 'Bob' .................................................... passed
+And def val = 5 ........................................................... passed
+Then assert name + val == 'Bob5' .......................................... passed
+Given def text = 'My name is &lt;name1&gt;' ..................................... passed
+And print text ............................................................ passed
+Then replace text.name1 = 'Archana' ....................................... passed
+And print text ............................................................ passed
+* def myName = { name: 'Archana' } ........................................ passed
+And print 'Before Replace Name : ', myName ................................ passed
+* set myName.name = 'Mahajan' ............................................. passed
+* match myName == { name : 'Mahajan' } .................................... passed
+And print 'After Replace Name  : ', myName ................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.features.actions" name="Use Remove" time="0.00455">
+    <system-out>Given def name = 'Bob' .................................................... passed
+And def val = 5 ........................................................... passed
+Then assert name + val == 'Bob5' .......................................... passed
+Given def text = 'My name is &lt;name1&gt;' ..................................... passed
+And print text ............................................................ passed
+Then replace text.name1 = 'Archana' ....................................... passed
+And print text ............................................................ passed
+* def myName = { name: 'Archana' } ........................................ passed
+And print 'Before Replace Name : ', myName ................................ passed
+* set myName.name = 'Mahajan' ............................................. passed
+* match myName == { name : 'Mahajan' } .................................... passed
+And print 'After Replace Name  : ', myName ................................ passed
+* def name = { first_name : 'Archana', last_name: 'Mahajan' } ............. passed
+* print "Before Remove Last Name : ", name ................................ passed
+* remove name.last_name ................................................... passed
+* print "After Remove Last Name : ", name ................................. passed</system-out>
+  </testcase>
+</testsuite>
